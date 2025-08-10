@@ -1,0 +1,196 @@
+/* space css */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Pretendard", "Malgun Gothic", "맑은 고딕", sans-serif;
+}
+
+.logo-img {
+  width: 300px;
+}
+
+.space-title {
+  font-size: clamp(24px, 7.6vw, 40px);
+  margin-bottom: 2rem;
+  font-weight: bolder;
+}
+
+.space-text {
+  text-align: center;
+  margin-bottom: 7rem;
+}
+
+.space-img {
+  width: 50%;
+}
+
+.space-zone {
+  display: flex;
+  align-items: center;
+  margin-bottom: 9rem;
+}
+
+.space-book-text {
+  width: 50%;
+  text-align: center;
+}
+
+.space-lp-text {
+  width: 50%;
+  text-align: center;
+}
+
+.space-book-text-h5,
+.space-lp-text-h5 {
+  padding-top: 2rem;
+}
+
+.space-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 7rem;
+}
+
+.space-btn-a {
+  border: none;
+  background-color: #f2dcdc;
+  width: 500px;
+  height: 50px;
+  transition: background-color 0.3s;
+  text-decoration: none;
+  color: #2c3e50;
+  align-content: center;
+  text-align: center;
+}
+
+.space-btn-a:hover {
+  background-color: #7b2a3b;
+  color: white;
+}
+
+.space-top-btn {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.top-btn {
+  border: none;
+  background-color: transparent;
+}
+
+.top-btn-a {
+  text-decoration: none;
+  color: #2c3e50;
+}
+
+.top-btn-a:hover {
+  color: #7b2a3b;
+}
+
+/* space 미디어쿼리 */
+
+@media screen and (max-width: 62rem) {
+  .space-zone {
+    flex-direction: column;
+    margin-bottom: 5rem;
+  }
+
+  #lp.space-zone {
+    flex-direction: column-reverse;
+  }
+
+  .space-img {
+    width: 70%;
+  }
+
+  .space-book-text,
+  .space-lp-text {
+    width: 70%;
+  }
+
+  .space-text h3 {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+
+  .space-lp-text h1,
+  .space-book-text h1 {
+    font-size: 1.7rem;
+    line-height: 1.2;
+    font-weight: 700;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .space-lp-text h4,
+  .space-book-text h4 {
+    font-size: 1.3rem;
+    line-height: 1.2;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
+  .space-lp-text-h5,
+  .space-book-text-h5 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 30rem) {
+  .space-zone {
+    flex-direction: column;
+    margin-bottom: 5rem;
+  }
+
+  #lp.space-zone {
+    flex-direction: column-reverse;
+  }
+
+  .space-img {
+    width: 100%;
+  }
+
+  .space-book-text,
+  .space-lp-text {
+    width: 80%;
+  }
+
+  .space-text h3 {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 0.75rem;
+  }
+
+  .space-lp-text h1,
+  .space-book-text h1 {
+    font-size: clamp(16px, 7.6vw, 40px);
+    line-height: 1.2;
+    font-weight: bolder;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .space-lp-text h4,
+  .space-book-text h4 {
+    font-size: clamp(16px, 5vw, 40px);
+    line-height: 1.2;
+    font-weight: bolder;
+    margin-bottom: 1rem;
+  }
+
+  .space-lp-text-h5,
+  .space-book-text-h5 {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 0.75rem;
+  }
+
+  .space-btn {
+    gap: 1rem;
+  }
+}

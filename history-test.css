@@ -1,0 +1,251 @@
+
+/* history main */
+
+html {
+  scroll-behavior: smooth;
+}
+
+.history-content-1{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.history-content-2{
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+.history-content-3{
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.cafe-img-line{
+  display: flex;
+  align-content: center;
+}
+.cafe-img{
+    vertical-align: top;
+    max-width: 100%;
+}
+.cafe-coffee-img{
+  vertical-align: top;
+   max-width: 50%;
+}
+.cafe-beans-img{
+  vertical-align: top;
+  max-width: 100%;
+}
+
+.cafe-title{
+  color: #7b2a3b;
+  font-style: italic;
+  font-weight: 700;
+}
+.cafe-title-2, .cafe-title-3{
+  color: #7b2a3b;
+  font-style: italic;
+  font-weight: 700;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+/*
+.cafe-img-1{
+    position: relative;
+    background-image: url(./images/cafe.png);
+    height: 100vh;
+    background-size: cover;
+}
+*/
+.img-cover{
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   background-color: rgba(0, 0, 0, 0.4);
+   z-index:1;
+}
+/*
+.img-content{
+  position: absolute;
+  top:80%;
+  left:20%;
+  transform: translate(-50%, -50%);
+  font-size:5rem;
+  color: white;
+  z-index: 2;
+  text-align: center;
+}*/
+
+.history-ourStory-h2{
+  padding-top: 2.5rem;
+  padding-bottom: 1.5rem;
+}
+.history-ourCoffee-h2{
+  padding-bottom: 1.5rem;
+}
+
+.cafe-content{
+  display: flex;             
+  flex-direction: column;
+  align-items: flex-start;          
+  align-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 2rem 2rem; 
+}
+
+.cafe-content h4,
+.cafe-content h5,
+.cafe-content p{
+  margin-top: 0;  
+}
+
+.cafe-content-2{
+  display: flex;             
+  flex-direction: column;
+  align-items: center;          
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem 2rem;
+}
+
+.cafe-content-2 h4,
+.cafe-content-2 h5,
+.cafe-content-2 p{
+  margin-top: 0;  
+}
+
+.cafe-img-2{
+  position: relative;
+  background-image: url(./images/coffee.png);
+  height: 100vh;
+  background-size: cover;
+}
+
+.cafe-img-3{
+  position: relative;
+  background-image: url(./images/beans.png);
+  height: 100vh;
+  background-size: cover;
+}
+
+
+.history-ourCoffee{
+  background-color: #F6F6F4;
+}
+
+.history-content-2{
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+/* 위로가기 */
+
+.history-top-btn{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.top-btn{
+    border: none;
+    background-color: transparent;
+}
+
+.top-btn-a{
+    text-decoration: none;
+    color: #2c3e50;
+}
+
+.top-btn-a:hover{
+    color: #7b2a3b;
+}
+
+.hover-text-card .hover-text {
+    display: none;
+}
+
+.hover-text{
+  color: red;
+  font-style: italic;
+}
+.hover-text-card:hover .default-text {
+    display: none;
+}
+
+.hover-text-card:hover .hover-text {
+    display: block;
+    transition: 0.5s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: 0.5s ease-in-out;
+}
+
+.history-title{
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+  
+}
+.history-title-line{
+  width: 50%;
+  padding-bottom: 2rem;
+  border-bottom: solid 1px #2c3e50;
+  margin: 0 auto;
+}
+.history-title-p{
+  color:#2c3e50;
+  font-size: 1.1rem;
+}
+
+/*
+.history-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 7rem;
+}
+
+.history-btn-a{
+    border: none;
+    background-color: #f2dcdc;
+    width: 500px;
+    height: 50px;
+    transition: background-color 0.3s;
+    text-decoration: none;
+    color: #2c3e50;
+    align-content: center;
+    text-align: center;
+}
+
+.history-btn-a:hover{
+    background-color: #7b2a3b;
+    color: white;
+}*/
+
+/* history 미디어쿼리 */
+
+@media screen and (max-width: 62rem){
+
+  .history-content-1{
+    flex-direction: column;
+  }
+  .cafe-content{
+    align-items: center;  
+    justify-content: center;
+    align-content: center;
+    text-align: center
+  }
+
+}

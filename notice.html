@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>공지사항</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <link rel="stylesheet" href="nav-footer.style.css">
+  <link rel="stylesheet" href="./notice.style.css">
+</head>
+
+<body>
+  <!-- ---------------------네비 영역--------------------- -->
+  <nav class="navbar navbar-expand-lg p-0">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./index.html"><img src="./index-img/logo.jpg" alt="#" /></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ps-2 pe-2">
+          <li class="nav-item">
+            <a class="nav-link" href="./menu.html">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./space.html">공간</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./history.html">히스토리</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./whole-event.html">이벤트</a>
+          </li>
+          <li class="nav-item">
+
+            <a class="nav-link" href="./notice.html">공지사항</a>
+
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" />
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!--------------------공지사항 메인 영역------------------->
+
+  <main class="p-2">
+
+    <div class="container">
+      <div class="kyuyoung-sub-title">
+        <h2>
+          <img src="./notice-img/notice.jpg" alt="공지사항" />
+        </h2>
+        <ul class="kyuyoung-sub-title-left-side">
+          <li class="kyuyoung-style-none">
+            <a href="#"><img src="./notice-img/icon_home.png" alt="홈" /></a>
+          </li>
+          <li class="kyuyoung-style-none">
+            <img class="kyuyoung-img-arrow" src="./notice-img/icon_arrow.png" alt="화살표" />
+          </li>
+          <li class="kyuyoung-style-none">
+            <a href="#" class="kyuyoung-notice">공지사항</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="kyuyoung-search-area p-4">
+        <div class="kyuyoung-search-box">
+          <input type="text" class="kyuyoung-search-input" placeholder="검색어 입력" />
+          <button class="kyuyoung-search-btn">검색</button>
+        </div>
+      </div>
+
+      <table class="kyuyoung-table">
+        <thead>
+          <tr>
+            <th class="kyuyoung-th">번호</th>
+            <th class="kyuyoung-th">제목</th>
+            <th class="kyuyoung-th">등록일</th>
+            <th class="kyuyoung-th">조회수</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="kyuyoung-tr">
+            <td class="kyuyoung-td">10</td>
+            <td class="kyuyoung-td kyuyoung-td-title">
+              <a href="#" class="kyuyoung-wn">[이벤트] 여름 시즌 음료 할인 행사 안내</a>
+            </td>
+            <td class="kyuyoung-td">2025-08-02</td>
+            <td class="kyuyoung-td">3,800</td>
+          </tr>
+          <tr class="kyuyoung-tr">
+            <td class="kyuyoung-td">9</td>
+            <td class="kyuyoung-td kyuyoung-td-title">
+              <a href="#" class="kyuyoung-wn">[공지] 고객 상담 시간 변경 안내</a>
+            </td>
+            <td class="kyuyoung-td">2025-07-29</td>
+            <td class="kyuyoung-td">2,700</td>
+          </tr>
+          <tr class="kyuyoung-tr">
+            <td class="kyuyoung-td">8</td>
+            <td class="kyuyoung-td kyuyoung-td-title">
+              <a href="#" class="kyuyoung-wn">[안내] 매장 내 위생 지침 강화</a>
+            </td>
+            <td class="kyuyoung-td">2025-07-27</td>
+            <td class="kyuyoung-td">2,450</td>
+          </tr>
+          <tr class="kyuyoung-tr">
+            <td class="kyuyoung-td">7</td>
+            <td class="kyuyoung-td kyuyoung-td-title">
+              <a href="#" class="kyuyoung-wn">[이벤트] 포인트 적립 2배 혜택 안내</a>
+            </td>
+            <td class="kyuyoung-td">2025-07-22</td>
+            <td class="kyuyoung-td">3,900</td>
+          </tr>
+          <tr class="kyuyoung-tr">
+            <td class="kyuyoung-td">6</td>
+            <td class="kyuyoung-td kyuyoung-td-title">
+              <a href="#" class="kyuyoung-wn">[공지] 신메뉴 출시 및 가격 변경 안내</a>
+            </td>
+            <td class="kyuyoung-td">2025-07-18</td>
+            <td class="kyuyoung-td">3,150</td>
+          </tr>
+          <tr class="kyuyoung-tr">
+            <td class="kyuyoung-td">5</td>
+            <td class="kyuyoung-td kyuyoung-td-title">
+              <a href="#" class="kyuyoung-wn">[안내] 모바일 앱 업데이트 안내</a>
+            </td>
+            <td class="kyuyoung-td">2025-07-14</td>
+            <td class="kyuyoung-td">4,200</td>
+          </tr>
+          <tr class="kyuyoung-tr">
+            <td class="kyuyoung-td">4</td>
+            <td class="kyuyoung-td kyuyoung-td-title">
+              <a href="#" class="kyuyoung-wn">[공지] 여름철 매장 운영 시간 변경</a>
+            </td>
+            <td class="kyuyoung-td">2025-07-10</td>
+            <td class="kyuyoung-td">2,800</td>
+          </tr>
+          <tr class="kyuyoung-tr">
+            <td class="kyuyoung-td">3</td>
+            <td class="kyuyoung-td kyuyoung-td-title">
+              <a href="#" class="kyuyoung-wn">[이벤트] 신제품 체험단 모집</a>
+            </td>
+            <td class="kyuyoung-td">2025-07-05</td>
+            <td class="kyuyoung-td">3,300</td>
+          </tr>
+          <tr class="kyuyoung-tr">
+            <td class="kyuyoung-td">2</td>
+            <td class="kyuyoung-td kyuyoung-td-title">
+              <a href="#" class="kyuyoung-wn">[공지] 포인트 적립 방식 변경 안내</a>
+            </td>
+            <td class="kyuyoung-td">2025-07-01</td>
+            <td class="kyuyoung-td">3,700</td>
+          </tr>
+          <tr class="kyuyoung-tr">
+            <td class="kyuyoung-td">1</td>
+            <td class="kyuyoung-td kyuyoung-td-title">
+              <a href="#" class="kyuyoung-wn">[안내] 개인정보 처리 방침 개정 안내</a>
+            </td>
+            <td class="kyuyoung-td">2025-06-28</td>
+            <td class="kyuyoung-td">4,500</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+
+
+  <footer>
+    <container>
+      <div class="pb-4 pt-4 first-line">K-Coffee</div>
+      <div class="second-line">
+        <row>
+          <col>
+          <a href="https://www.naver.com/">United States</a>
+          </col>
+          <col>
+          <a href="https://www.naver.com/">Email Sign-up</a>
+          </col>
+          <col>
+          <a href="https://www.naver.com/">Contact Us</a>
+          </col>
+          <col>
+          <a href="https://www.naver.com/">Follow Us</a>
+          </col>
+          <col>
+          <a href="https://www.naver.com/">Callifonia Transparency</a>
+          </col>
+          <Col>
+          <a href="https://www.naver.com/">Legal Notice</a>
+          </Col>
+          <Col>
+          <a href="https://www.naver.com/">Careers</a>
+          </Col>
+          <col>
+          <a href="https://www.naver.com/">Sitemap</a>
+          </col>
+        </row>
+      </div>
+      <div class="text-center p-2 third-line">Ship to : Korea</div>
+    </container>
+  </footer>
+
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

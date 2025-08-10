@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" as="style" crossorigin
+        href="https://cdn.jsdelivr.net/npm/pretendard@1.3.9/dist/web/static/pretendard.css" />
+    <link rel="stylesheet" href="./menu.style.css">
+    <link rel="stylesheet" href="./nav-footer.style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg p-0">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html"><img src="./index-img/logo.jpg" alt="#" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ps-2 pe-2">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./space.html">공간</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./history.html">히스토리</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./whole-event.html">이벤트</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./notice.html">공지사항</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" />
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="menu-wrapper w-100" style="min-height: 100vh;">
+
+            <!-- 탭 라디오 (숨김) -->
+            <input type="radio" class="btn-check" name="menu-toggle" id="menu-toggle1" autocomplete="off" checked>
+            <input type="radio" class="btn-check" name="menu-toggle" id="menu-toggle2" autocomplete="off">
+            <input type="radio" class="btn-check" name="menu-toggle" id="menu-toggle3" autocomplete="off">
+
+            <!-- 배너 -->
+            <div class="menu-banner text-center d-flex flex-column justify-content-center align-items-center"
+                style="height: clamp(350px, 60vh, 450px); margin:0; padding:0;">
+                <h3 style="font-size: 36px; font-weight: bold;" class="menu-banner-title menu-tab1 main-font">음료</h3>
+                <h3 style="font-size: 36px; font-weight: bold;" class="menu-banner-title menu-tab2 main-font">푸드</h3>
+                <h3 style="font-size: 36px; font-weight: bold;" class="menu-banner-title menu-tab3 main-font">MD</h3>
+
+                <h5 class="menu-banner-subtitle menu-tab1">당신의 취향에 맞춘 한 잔, <p>K-Culture와 함께 즐겨보세요</p>
+                </h5>
+                <h5 class="menu-banner-subtitle menu-tab2">일상을 감싸는 K-무드 푸드,<p>K-Culture에서 만나보세요!</p>
+                </h5>
+                <h5 class="menu-banner-subtitle menu-tab3">K-Culture의 감성을 담은<p>특별한 MD 만나보세요.</p>
+                </h5>
+
+                <div class="btn-group mt-4" role="group">
+                    <label class="btn btn-outline-light main-font menu-main-font"
+                        style="width:180px; font-weight: bold;" for="menu-toggle1">음료</label>
+                    <label class="btn btn-outline-light main-font menu-main-font"
+                        style="width:180px; font-weight: bold;" for="menu-toggle2">푸드</label>
+                    <label class="btn btn-outline-light main-font menu-main-font"
+                        style="width:180px; font-weight: bold;" for="menu-toggle3">MD</label>
+                </div>
+            </div>
+
+            <!-- 콘텐츠 -->
+            <div class="menu-contents pt-5 text-center">
+
+
+                <!-- 탭1: 음료 -->
+                <div class="menu-tab menu-tab1 menu-font">
+                    <div class="container">
+                        <!-- 메뉴 검색 -->
+                        <nav class="navbar bg-body-tertiary mt-3 menu-search-navbar">
+                            <div class="container-fluid">
+                                <span class="navbar-brand ps-1">메뉴 검색</span>
+                                <form class="d-flex" role="search" onsubmit="return false;">
+                                    <input class="form-control me-2 search-input" type="search" placeholder="Search" />
+                                    <button class="btn btn-outline-success" type="submit">Search</button>
+                                </form>
+                            </div>
+                        </nav>
+                        <div class="menu-font section-title mb-5" style="font-size: 24px; font-weight: bold;">추천 상품
+                        </div>
+
+                        <!-- 추천 3개 -->
+                        <div class="row justify-content-center g-4">
+                            <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+                                <div class="menu-card">
+                                    <div class="img-wrapper">
+                                        <img src="./menu-img/drink-sajaboys.png" alt="[KDH] 핑크 소다 팝">
+                                        <div class="overlay">
+                                            <div class="menu-name">[KDH] 핑크 소다 팝</div>
+                                            <div class="menu-desc">사자보이즈의 달콤한 매력이 녹아든 핑크빛 탄산이 입안 가득 상큼하게 번지는 맛, 레몬 장식으로
+                                                시원함을 더한 청량한 음료.</div>
+                                        </div>
+                                    </div>
+                                    <p class="menu-title mt-2">[KDH] 핑크 소다 팝</p>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+                                <div class="menu-card">
+                                    <div class="img-wrapper">
+                                        <img src="./menu-img/drink-huntrix-2.png" alt="헌트릭스 Golden 프라페">
+                                        <div class="overlay">
+                                            <div class="menu-name">[KDH] 헌트릭스 Golden 프라페</div>
+                                            <div class="menu-desc">골드망고와 블루베리가 어우러진 상금달콤한 프라페. 화려함과 조화가 공존하는 헌트릭스의
+                                                'Golden' 처럼 눈과 입을 모두 사로잡는 음료</div>
+                                        </div>
+                                    </div>
+                                    <p class="menu-title mt-2">[KDH] 헌트릭스 Golden 프라페</p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+                                <div class="menu-card">
+                                    <div class="img-wrapper">
+                                        <img src="./menu-img/drink-huntrix.png" alt="헌트릭스 TakeDown 프라페">
+                                        <div class="overlay">
+                                            <div class="menu-name">[KDH] 헌트릭스 TakeDown 프라페</div>
+                                            <div class="menu-desc">헌트릭스의 ‘Takedown’에서 느껴지는 강렬한 몰입감을 담은 프라페. 깊고 진한 풍미 속에
+                                                악령을 쓰러뜨리는 듯한 짜릿함을 더한 한 잔</div>
+                                        </div>
+                                    </div>
+                                    <p class="menu-title mt-2">[KDH] 헌트릭스 TakeDown 프라페</p>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+                                <div class="menu-card">
+                                    <div class="img-wrapper">
+                                        <img src="./menu-img/drink-duffy&sussie.png" alt="자몽에이드">
+                                        <div class="overlay">
+                                            <div class="menu-name">[KDH] 더피&수지 대추차</div>
+                                            <div class="menu-desc">달콤하고 깊은 맛의 대추차에 귀여운 파란 호랑이 ‘더피’와 까치 ‘수지’를 더한 따뜻한 한 잔.
+                                                전통의 향과 함께 즐기는 아기자기한 비주얼의 차</div>
+                                        </div>
+                                    </div>
+                                    <p class="menu-title mt-2">[KDH] 더피&수지 대추차</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <!-- 전체 메뉴 4개 -->
+                        <div class="row justify-content-center g-4 mt-3">
+                            <div class="col-6 col-md-3">
+                                <div class="menu-card">
+                                    <div class="img-wrapper"><img src="./menu-img/drink-americano.png">
+                                        <div class="overlay">
+                                            <div class="menu-name">아이스 아메리카노</div>
+                                            <div class="menu-desc">진하게 추출한 에스프레소에 시원한 물과 얼음을 더해 깔끔하고 담백한 풍미를 살린 커피.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="menu-title mt-2">아이스 아메리카노</p>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <div class="menu-card">
+                                    <div class="img-wrapper"><img src="./menu-img/drink-latte.png">
+                                        <div class="overlay">
+                                            <div class="menu-name">아이스 라떼</div>
+                                            <div class="menu-desc">진한 에스프레소에 시원한 우유와 얼음을 더해 부드럽고 깔끔하게 즐기는 커피.</div>
+                                        </div>
+                                    </div>
+                                    <p class="menu-title mt-2">아이스 라떼</p>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <div class="menu-card">
+                                    <div class="img-wrapper"><img src="./menu-img/drink-malcha.png">
+                                        <div class="overlay">
+                                            <div class="menu-name">말차 라떼</div>
+                                            <div class="menu-desc">향긋한 녹색 말차가 부드러운 우유와 만나 시원하게 어우러진 은은한 단맛의 라떼.</div>
+                                        </div>
+                                    </div>
+                                    <p class="menu-title mt-2">말차 라떼</p>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <div class="menu-card">
+                                    <div class="img-wrapper"><img src="./menu-img/drink-americano.png">
+                                        <div class="overlay">
+                                            <div class="menu-name">콜드브루</div>
+                                            <div class="menu-desc">시간을 들여 천천히 우려낸 커피로, 깊고 부드러운 풍미와 풍부한 산미가 특징인 시원한 음료.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="menu-title mt-2">콜드브루</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- 탭2: 푸드 -->
+                <div class="menu-tab menu-tab2 menu-font">
+                    <div class="container">
+                        <!-- 메뉴 검색 -->
+                        <nav class="navbar bg-body-tertiary mt-3 menu-search-navbar">
+                            <div class="container-fluid">
+                                <span class="navbar-brand ps-1">메뉴 검색</span>
+                                <form class="d-flex" role="search" onsubmit="return false;">
+                                    <input class="form-control me-2 search-input" type="search" placeholder="Search" />
+                                    <button class="btn btn-outline-success" type="submit">Search</button>
+                                </form>
+                            </div>
+                        </nav>
+                        <div class="menu-font section-title mb-5" style="font-size: 24px; font-weight: bold;">푸드</div>
+
+                        <!-- 추천 4개 -->
+                        <div class="row justify-content-center g-4">
+                            <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+                                <div class="menu-card">
+                                    <div class="img-wrapper"><img src="./menu-img/food-Bungeobbang.png">
+                                        <div class="overlay">
+                                            <div class="menu-name">팥 붕어빵</div>
+                                            <div class="menu-desc">달달한 팥이 들어있는 바삭바삭한 붕어빵</div>
+                                        </div>
+                                    </div>
+                                    <p class="menu-title mt-2">팥 붕어빵</p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+                                <div class="menu-card">
+                                    <div class="img-wrapper"><img src="./menu-img/food-Yakgwa.png">
+                                        <div class="overlay">
+                                            <div class="menu-name">약과</div>
+                                            <div class="menu-desc">꿀과 참기름, 밀가루로 만든 전통 과자로, 달콤하고 쫄깃한 식감과 은은한 향이 특징인 한국의
+                                                대표 다과.</div>
+                                        </div>
+                                    </div>
+                                    <p class="menu-title mt-2">약과</p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+                                <div class="menu-card">
+                                    <div class="img-wrapper"><img src="./menu-img/food-garaetteok.png">
+                                        <div class="overlay">
+                                            <div class="menu-name">가래떡</div>
+                                            <div class="menu-desc">쫄깃한 가래떡을 노릇하게 구워 겉은 바삭하고 속은 부드럽게 즐기는 맛, 은은한 쌀향과 고소함이
+                                                어우러진 담백한 별미.</div>
+                                        </div>
+                                    </div>
+                                    <p class="menu-title mt-2">가래떡</p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+                                <div class="menu-card">
+                                    <div class="img-wrapper"><img src="./menu-img/food-hotteok.png">
+                                        <div class="overlay">
+                                            <div class="menu-name">호떡</div>
+                                            <div class="menu-desc">달콤한 설탕과 견과류 속을 넣어 구워낸 바삭한 겉과 쫄깃한 속의 조화, 고소함과 달콤함이
+                                                어우러진 한국 전통 간식.</div>
+                                        </div>
+                                    </div>
+                                    <p class="menu-title mt-2">호떡</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <!-- 전체 메뉴 4개 -->
+                        <div class="row justify-content-center g-4 mt-3">
+                            <div class="col-6 col-md-3">
+                                <div class="menu-card">
+                                    <div class="img-wrapper"><img src="./menu-img/food-eggtarts.png">
+                                        <div class="overlay">
+                                            <div class="menu-name">에그타르트</div>
+                                            <div class="menu-desc">바삭한 페이스트리 속에 부드럽고 진한 커스터드 크림을 채운 달콤하고 고소한 디저트.</div>
+                                        </div>
+                                    </div>
+                                    <p class="menu-title mt-2">에그타르트</p>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <div class="menu-card">
+                                    <div class="img-wrapper"><img src="./menu-img/food-cookies.png">
+                                        <div class="overlay">
+                                            <div class="menu-name">초콜릿 쿠키</div>
+                                            <div class="menu-desc">진한 초콜릿 풍미에 바삭함과 촉촉함이 어우러진 달콤한 쿠키.</div>
+                                        </div>
+                                    </div>
+                                    <p class="menu-title mt-2">초콜릿 쿠키</p>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <div class="menu-card">
+                                    <div class="img-wrapper"><img src="./menu-img/food-cake.png">
+                                        <div class="overlay">
+                                            <div class="menu-name">초코케이크</div>
+                                            <div class="menu-desc">부드러운 초콜릿 시트와 진한 가나슈가 어우러진 달콤하고 풍미 깊은 케이크.</div>
+                                        </div>
+                                    </div>
+                                    <p class="menu-title mt-2">초코케이크</p>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <div class="menu-card">
+                                    <div class="img-wrapper"><img src="./menu-img/food-sandwich.png">
+                                        <div class="overlay">
+                                            <div class="menu-name">샌드위치</div>
+                                            <div class="menu-desc">신선한 채소와 재료를 부드러운 빵 사이에 넣어 간편하게 즐기는 든든한 브런치 메뉴.</div>
+                                        </div>
+                                    </div>
+                                    <p class="menu-title mt-2">샌드위치</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- 탭3: MD -->
+                <div class="menu-tab menu-tab3 menu-font">
+                    <div class="container">
+                        <nav class="navbar bg-body-tertiary mt-3 menu-search-navbar">
+                            <div class="container-fluid">
+                                <span class="navbar-brand ps-1">메뉴 검색</span>
+                                <form class="d-flex" role="search" onsubmit="return false;">
+                                    <input class="form-control me-2 search-input" type="search" placeholder="Search" />
+                                    <button class="btn btn-outline-success" type="submit">Search</button>
+                                </form>
+                            </div>
+                        </nav>
+                        <div class="menu-font section-title mb-5" style="font-size: 24px; font-weight: bold;">추천 상품
+                        </div>
+
+                        <!-- 추천 4개 -->
+                        <div class="row justify-content-center g-4">
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                                <div class="menu-card">
+                                    <div class="img-wrapper"><img src="./menu-img/MD-huntrix-keyring.png">
+                                        <div class="overlay">
+                                            <div class="menu-name">[KDH] 헌트릭스 로고 키링</div>
+                                            <div class="menu-desc">헌트릭스 로고를 그대로 담아낸 메탈 키링, 세련된 디자인과 견고한 마감으로 언제 어디서나 악령
+                                                사냥단의 일원이 된 듯한 포인트 아이템.</div>
+                                        </div>
+                                    </div>
+                                    <p class="menu-title mt-2">[KDH] 헌트릭스 로고 키링</p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                                <div class="menu-card">
+                                    <div class="img-wrapper"><img src="./menu-img/MD-sajaboys-keyring.png">
+                                        <div class="overlay">
+                                            <div class="menu-name">[KDH] 사자보이즈 로고 키링</div>
+                                            <div class="menu-desc">사자보이즈의 로고를 담아낸 감각적인 메탈 키링, 깔끔한 디자인과 견고한 소재로 팬심과 스타일을
+                                                동시에 표현하는 아이템.</div>
+                                        </div>
+                                    </div>
+                                    <p class="menu-title mt-2">[KDH] 사자보이즈 로고 키링</p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                                <div class="menu-card">
+                                    <div class="img-wrapper"><img src="./menu-img/MD-duffy.png">
+                                        <div class="overlay">
+                                            <div class="menu-name">[KDH] 더피 인형</div>
+                                            <div class="menu-desc">파란 호랑이 더피를 귀엽게 구현한 부드러운 봉제 인형, 쫀쫀한 촉감과 아기자기한 디테일로 소장
+                                                가치와 포근함을 동시에 담은 굿즈.</div>
+                                        </div>
+                                    </div>
+                                    <p class="menu-title mt-2">[KDH] 더피 인형</p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                                <div class="menu-card">
+                                    <div class="img-wrapper"><img src="./menu-img/MD-ecobag.png">
+                                        <div class="overlay">
+                                            <div class="menu-name">에코백</div>
+                                            <div class="menu-desc">튼튼한 캔버스 원단에 심플한 디자인을 더한 실용적인 가방, 가벼운 외출부터 데일리 사용까지
+                                                활용도 높은 아이템</div>
+                                        </div>
+                                    </div>
+                                    <p class="menu-title mt-2">에코백</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 전체 메뉴 4개 -->
+                        <div class="row justify-content-center g-4 mt-3">
+                            <div class="col-6 col-md-3">
+                                <div class="menu-card">
+                                    <div class="img-wrapper"><img src="./menu-img/MD-tumbler.png">
+                                        <div class="overlay">
+                                            <div class="menu-name">텀블러</div>
+                                            <div class="menu-desc">세련된 디자인과 견고한 보온·보냉 기능을 갖춘 실용적인 음료 용기, 일상과 여행 어디서나
+                                                편리하게 사용하는 아이템.</div>
+                                        </div>
+                                    </div>
+                                    <p class="menu-title mt-2">텀블러</p>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <div class="menu-card">
+                                    <div class="img-wrapper"><img src="./menu-img/MD-note.png">
+                                        <div class="overlay">
+                                            <div class="menu-name">노트</div>
+                                            <div class="menu-desc">깔끔한 디자인과 부드러운 필기감을 갖춘 실용적인 노트, 아이디어 기록부터 일상 메모까지 다양하게
+                                                활용 가능한 아이템.</div>
+                                        </div>
+                                    </div>
+                                    <p class="menu-title mt-2">노트</p>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <div class="menu-card">
+                                    <div class="img-wrapper"><img src="./menu-img/MD-Tshirts.png">
+                                        <div class="overlay">
+                                            <div class="menu-name">티셔츠</div>
+                                            <div class="menu-desc">심플한 로고 디자인을 담은 캐주얼 티셔츠, 편안한 착용감과 다양한 스타일링이 가능한 데일리
+                                                아이템.</div>
+                                        </div>
+                                    </div>
+                                    <p class="menu-title mt-2">티셔츠</p>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <div class="menu-card">
+                                    <div class="img-wrapper"><img src="./menu-img/MD-dripbag.png">
+                                        <div class="overlay">
+                                            <div class="menu-name">드립백</div>
+                                            <div class="menu-desc">간편하게 즐기는 1회용 커피 드립백, 풍부한 향과 깔끔한 맛을 그대로 담아 어디서나 손쉽게 즐길
+                                                수 있는 커피.</div>
+                                        </div>
+                                    </div>
+                                    <p class="menu-title mt-2">드립백</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <button type="button" class="btn-more btn btn-outline-dark mt-4">더보기</button>
+
+            </div><!-- /.menu-contents -->
+        </div>
+    </main>
+    <footer>
+        <container>
+            <div class="pb-4 pt-4 first-line">K-Coffee</div>
+            <div class="second-line">
+                <row>
+                    <col>
+                    <a href="https://www.naver.com/">United States</a>
+                    </col>
+                    <col>
+                    <a href="https://www.naver.com/">Email Sign-up</a>
+                    </col>
+                    <col>
+                    <a href="https://www.naver.com/">Contact Us</a>
+                    </col>
+                    <col>
+                    <a href="https://www.naver.com/">Follow Us</a>
+                    </col>
+                    <col>
+                    <a href="https://www.naver.com/">Callifonia Transparency</a>
+                    </col>
+                    <Col>
+                    <a href="https://www.naver.com/">Legal Notice</a>
+                    </Col>
+                    <Col>
+                    <a href="https://www.naver.com/">Careers</a>
+                    </Col>
+                    <col>
+                    <a href="https://www.naver.com/">Sitemap</a>
+                    </col>
+                </row>
+            </div>
+            <div class="text-center p-2 third-line">Ship to : Korea</div>
+        </container>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous">
+        </script>
+
+    <script>
+        const items = document.querySelectorAll('.home-notice-item');
+        let index = 0;
+
+        setInterval(() => {
+            items[index].classList.remove('active');
+            index = (index + 1) % items.length;
+            items[index].classList.add('active');
+        }, 3000);
+    </script>
+</body>
+
+
+
+</html>
